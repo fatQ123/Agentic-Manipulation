@@ -1,0 +1,920 @@
+{
+  "model": "qwen3.8-flash",
+  "service_host": "llm-0roppdq75qfyzbvv.cn-beijing.maas.aliyuncs.com",
+  "version": "v2",
+  "trials": [
+    {
+      "seed": 0,
+      "success": true,
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold",
+        "place",
+        "release_retreat",
+        "place_hold"
+      ],
+      "instruction": "\u628a\u7ea2\u8272\u65b9\u5757\u653e\u8fdb\u9ec4\u8272\u7897\u91cc",
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "red",
+          "bbox": [
+            531,
+            406,
+            566,
+            456
+          ]
+        },
+        "destination": {
+          "color": "yellow",
+          "bbox": [
+            438,
+            501,
+            610,
+            686
+          ]
+        }
+      },
+      "destination_world": [
+        0.08309967815876007,
+        0.13513948023319244,
+        0.08652167022228241
+      ],
+      "candidate_index": 0,
+      "tcp_target_world": [
+        [
+          0.5908046960830688,
+          0.21760383248329163,
+          -0.7769161462783813,
+          -0.12371167540550232
+        ],
+        [
+          -0.026004623621702194,
+          -0.9573062658309937,
+          -0.2879038155078888,
+          -0.007139271590858698
+        ],
+        [
+          -0.8063954710960388,
+          0.19029827415943146,
+          -0.5599222183227539,
+          0.03000595048069954
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "place_hold_s": 1.0,
+      "final_cube_position": [
+        0.06230098009109497,
+        0.14609378576278687,
+        0.02999991364777088
+      ],
+      "bowl_position": [
+        0.08272412419319153,
+        0.13622790575027466,
+        0.004999998956918716
+      ],
+      "min_bottom_during_hold_m": 0.11761568486690521,
+      "hold_s": 1.0,
+      "steps": 398,
+      "elapsed_s": 22.458421728999383,
+      "expected": {
+        "object": "red",
+        "destination": "yellow"
+      }
+    },
+    {
+      "seed": 1,
+      "success": true,
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold",
+        "place",
+        "release_retreat",
+        "place_hold"
+      ],
+      "instruction": "\u628a\u84dd\u8272\u65b9\u5757\u653e\u8fdb\u7d2b\u8272\u7897\u91cc",
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "blue",
+          "bbox": [
+            469,
+            350,
+            506,
+            406
+          ]
+        },
+        "destination": {
+          "color": "purple",
+          "bbox": [
+            442,
+            494,
+            609,
+            708
+          ]
+        }
+      },
+      "destination_world": [
+        0.07916364818811417,
+        0.12577398121356964,
+        0.08652167022228241
+      ],
+      "candidate_index": 0,
+      "tcp_target_world": [
+        [
+          0.6711661219596863,
+          -0.12384398281574249,
+          -0.730889081954956,
+          -0.126416876912117
+        ],
+        [
+          -0.25273069739341736,
+          -0.9651053547859192,
+          -0.06854911148548126,
+          -0.1669633537530899
+        ],
+        [
+          -0.6968954801559448,
+          0.23072592914104462,
+          -0.6790450811386108,
+          0.027527691796422005
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "place_hold_s": 1.0,
+      "final_cube_position": [
+        0.10111162066459656,
+        0.130237877368927,
+        0.02999991364777088
+      ],
+      "bowl_position": [
+        0.07874288409948349,
+        0.1267649382352829,
+        0.004999998956918716
+      ],
+      "min_bottom_during_hold_m": 0.11723971366882324,
+      "hold_s": 1.0,
+      "steps": 420,
+      "elapsed_s": 24.754644908996852,
+      "expected": {
+        "object": "blue",
+        "destination": "purple"
+      }
+    },
+    {
+      "seed": 2,
+      "success": true,
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold",
+        "place",
+        "release_retreat",
+        "place_hold"
+      ],
+      "instruction": "\u628a\u7eff\u8272\u65b9\u5757\u653e\u8fdb\u9ec4\u8272\u7897\u91cc",
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "green",
+          "bbox": [
+            466,
+            358,
+            489,
+            392
+          ]
+        },
+        "destination": {
+          "color": "yellow",
+          "bbox": [
+            320,
+            379,
+            477,
+            517
+          ]
+        }
+      },
+      "destination_world": [
+        0.07317109405994415,
+        -0.1316085159778595,
+        0.08649517595767975
+      ],
+      "candidate_index": 4,
+      "tcp_target_world": [
+        [
+          0.5143533945083618,
+          0.3631007969379425,
+          -0.7769161462783813,
+          -0.11022475361824036
+        ],
+        [
+          0.22265079617500305,
+          -0.9314174056053162,
+          -0.2879038155078888,
+          -0.15342143177986145
+        ],
+        [
+          -0.8281710743904114,
+          -0.024896662682294846,
+          -0.5599222183227539,
+          0.029534656554460526
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "place_hold_s": 1.0,
+      "final_cube_position": [
+        0.06185634806752205,
+        -0.13478076457977295,
+        0.02999989315867424
+      ],
+      "bowl_position": [
+        0.07265391945838928,
+        -0.1305093765258789,
+        0.004999998956918716
+      ],
+      "min_bottom_during_hold_m": 0.11743786931037903,
+      "hold_s": 1.0,
+      "steps": 386,
+      "elapsed_s": 24.478403836001235,
+      "expected": {
+        "object": "green",
+        "destination": "yellow"
+      }
+    },
+    {
+      "seed": 3,
+      "success": true,
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold",
+        "place",
+        "release_retreat",
+        "place_hold"
+      ],
+      "instruction": "\u628a\u7ea2\u8272\u65b9\u5757\u653e\u8fdb\u7d2b\u8272\u7897\u91cc",
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "red",
+          "bbox": [
+            540,
+            415,
+            570,
+            455
+          ]
+        },
+        "destination": {
+          "color": "purple",
+          "bbox": [
+            435,
+            490,
+            600,
+            710
+          ]
+        }
+      },
+      "destination_world": [
+        0.08718791604042053,
+        0.121651791036129,
+        0.08652167022228241
+      ],
+      "candidate_index": 1,
+      "tcp_target_world": [
+        [
+          0.5143533945083618,
+          0.3631007969379425,
+          -0.7769161462783813,
+          -0.12449881434440613
+        ],
+        [
+          0.22265079617500305,
+          -0.9314174056053162,
+          -0.2879038155078888,
+          0.008843893185257912
+        ],
+        [
+          -0.8281710743904114,
+          -0.024896662682294846,
+          -0.5599222183227539,
+          0.02993418648838997
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "place_hold_s": 1.0,
+      "final_cube_position": [
+        0.0706252008676529,
+        0.11434631049633026,
+        0.029999924823641777
+      ],
+      "bowl_position": [
+        0.08673956990242004,
+        0.122681625187397,
+        0.004999998956918716
+      ],
+      "min_bottom_during_hold_m": 0.11741004139184952,
+      "hold_s": 1.0,
+      "steps": 388,
+      "elapsed_s": 24.94279204099803,
+      "expected": {
+        "object": "red",
+        "destination": "purple"
+      }
+    },
+    {
+      "seed": 4,
+      "success": true,
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold",
+        "place",
+        "release_retreat",
+        "place_hold"
+      ],
+      "instruction": "\u628a\u84dd\u8272\u65b9\u5757\u653e\u8fdb\u9ec4\u8272\u7897\u91cc",
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "blue",
+          "bbox": [
+            528,
+            413,
+            559,
+            458
+          ]
+        },
+        "destination": {
+          "color": "yellow",
+          "bbox": [
+            312,
+            375,
+            477,
+            542
+          ]
+        }
+      },
+      "destination_world": [
+        0.08075695484876633,
+        -0.13378533720970154,
+        0.08649517595767975
+      ],
+      "candidate_index": 0,
+      "tcp_target_world": [
+        [
+          0.3773108124732971,
+          0.7510319948196411,
+          -0.5418373346328735,
+          -0.11694742739200592
+        ],
+        [
+          0.49888888001441956,
+          -0.6577666997909546,
+          -0.5643163919448853,
+          -0.000338822603225708
+        ],
+        [
+          -0.7802221179008484,
+          -0.057393938302993774,
+          -0.6228639483451843,
+          0.02117231860756874
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "place_hold_s": 1.0,
+      "final_cube_position": [
+        0.0564005970954895,
+        -0.1396159827709198,
+        0.02999989688396454
+      ],
+      "bowl_position": [
+        0.08033043146133423,
+        -0.13268886506557465,
+        0.004999998956918716
+      ],
+      "min_bottom_during_hold_m": 0.11762012541294098,
+      "hold_s": 1.0,
+      "steps": 393,
+      "elapsed_s": 23.236579980999522,
+      "expected": {
+        "object": "blue",
+        "destination": "yellow"
+      }
+    },
+    {
+      "seed": 5,
+      "success": true,
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold",
+        "place",
+        "release_retreat",
+        "place_hold"
+      ],
+      "instruction": "\u628a\u7eff\u8272\u65b9\u5757\u653e\u8fdb\u7d2b\u8272\u7897\u91cc",
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "green",
+          "bbox": [
+            533,
+            411,
+            567,
+            462
+          ]
+        },
+        "destination": {
+          "color": "purple",
+          "bbox": [
+            328,
+            378,
+            485,
+            547
+          ]
+        }
+      },
+      "destination_world": [
+        0.073515884578228,
+        -0.12681560218334198,
+        0.08649517595767975
+      ],
+      "candidate_index": 2,
+      "tcp_target_world": [
+        [
+          0.5908046960830688,
+          0.21760383248329163,
+          -0.7769161462783813,
+          -0.11873921751976013
+        ],
+        [
+          -0.026004623621702194,
+          -0.9573062658309937,
+          -0.2879038155078888,
+          -0.0026505948044359684
+        ],
+        [
+          -0.8063954710960388,
+          0.19029827415943146,
+          -0.5599222183227539,
+          0.029486436396837234
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "place_hold_s": 1.0,
+      "final_cube_position": [
+        0.0700816884636879,
+        -0.1330212950706482,
+        0.02999993786215782
+      ],
+      "bowl_position": [
+        0.07311072945594788,
+        -0.12572446465492249,
+        0.004999998956918716
+      ],
+      "min_bottom_during_hold_m": 0.11742094904184341,
+      "hold_s": 1.0,
+      "steps": 393,
+      "elapsed_s": 20.193446691002464,
+      "expected": {
+        "object": "green",
+        "destination": "purple"
+      }
+    },
+    {
+      "seed": 6,
+      "success": true,
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold",
+        "place",
+        "release_retreat",
+        "place_hold"
+      ],
+      "instruction": "\u5c06\u7ea2\u8272\u79ef\u6728\u79fb\u5165\u9ec4\u8272\u5bb9\u5668",
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "red",
+          "bbox": [
+            540,
+            405,
+            575,
+            452
+          ]
+        },
+        "destination": {
+          "color": "yellow",
+          "bbox": [
+            325,
+            375,
+            460,
+            520
+          ]
+        }
+      },
+      "destination_world": [
+        0.07544960081577301,
+        -0.13431397080421448,
+        0.08649517595767975
+      ],
+      "candidate_index": 0,
+      "tcp_target_world": [
+        [
+          0.5143533945083618,
+          0.3631007969379425,
+          -0.7769161462783813,
+          -0.12108233571052551
+        ],
+        [
+          0.22265079617500305,
+          -0.9314174056053162,
+          -0.2879038155078888,
+          -0.0013332427479326725
+        ],
+        [
+          -0.8281710743904114,
+          -0.024896662682294846,
+          -0.5599222183227539,
+          0.028791923075914383
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "place_hold_s": 1.0,
+      "final_cube_position": [
+        0.06960234045982361,
+        -0.13899987936019897,
+        0.029999932274222374
+      ],
+      "bowl_position": [
+        0.0749630555510521,
+        -0.13325020670890808,
+        0.004999998956918716
+      ],
+      "min_bottom_during_hold_m": 0.11769150197505951,
+      "hold_s": 1.0,
+      "steps": 390,
+      "elapsed_s": 23.130320971999026,
+      "expected": {
+        "object": "red",
+        "destination": "yellow"
+      }
+    },
+    {
+      "seed": 7,
+      "success": true,
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold",
+        "place",
+        "release_retreat",
+        "place_hold"
+      ],
+      "instruction": "\u5c06\u84dd\u8272\u79ef\u6728\u79fb\u5165\u7d2b\u8272\u5bb9\u5668",
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "blue",
+          "bbox": [
+            461,
+            348,
+            494,
+            398
+          ]
+        },
+        "destination": {
+          "color": "purple",
+          "bbox": [
+            439,
+            492,
+            609,
+            690
+          ]
+        }
+      },
+      "destination_world": [
+        0.08430659770965576,
+        0.1318894326686859,
+        0.08652167022228241
+      ],
+      "candidate_index": 0,
+      "tcp_target_world": [
+        [
+          0.6711661219596863,
+          -0.12384398281574249,
+          -0.730889081954956,
+          -0.1186847910284996
+        ],
+        [
+          -0.25273069739341736,
+          -0.9651053547859192,
+          -0.06854911148548126,
+          -0.17469538748264313
+        ],
+        [
+          -0.6968954801559448,
+          0.23072592914104462,
+          -0.6790450811386108,
+          0.027527691796422005
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "place_hold_s": 1.0,
+      "final_cube_position": [
+        0.058594197034835815,
+        0.1255493015050888,
+        0.029999909922480583
+      ],
+      "bowl_position": [
+        0.08385791629552841,
+        0.1329227089881897,
+        0.004999998956918716
+      ],
+      "min_bottom_during_hold_m": 0.11725226044654846,
+      "hold_s": 1.0,
+      "steps": 425,
+      "elapsed_s": 28.21350190800149,
+      "expected": {
+        "object": "blue",
+        "destination": "purple"
+      }
+    },
+    {
+      "seed": 8,
+      "success": true,
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold",
+        "place",
+        "release_retreat",
+        "place_hold"
+      ],
+      "instruction": "\u5c06\u7eff\u8272\u79ef\u6728\u79fb\u5165\u9ec4\u8272\u5bb9\u5668",
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "green",
+          "bbox": [
+            475,
+            345,
+            502,
+            385
+          ]
+        },
+        "destination": {
+          "color": "yellow",
+          "bbox": [
+            448,
+            492,
+            612,
+            672
+          ]
+        }
+      },
+      "destination_world": [
+        0.0755479633808136,
+        0.12908466160297394,
+        0.08652167022228241
+      ],
+      "candidate_index": 0,
+      "tcp_target_world": [
+        [
+          0.9904482364654541,
+          -0.132663294672966,
+          0.03758816048502922,
+          -0.14254026114940643
+        ],
+        [
+          -0.12778131663799286,
+          -0.9855368137359619,
+          -0.11130667477846146,
+          -0.16125023365020752
+        ],
+        [
+          0.05181088671088219,
+          0.10544038563966751,
+          -0.9930750131607056,
+          0.020743655040860176
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "place_hold_s": 1.0,
+      "final_cube_position": [
+        0.069735586643219,
+        0.14273850619792938,
+        0.030000001192092896
+      ],
+      "bowl_position": [
+        0.07506886124610901,
+        0.1301547735929489,
+        0.004999998956918716
+      ],
+      "min_bottom_during_hold_m": 0.11648385971784592,
+      "hold_s": 1.0,
+      "steps": 411,
+      "elapsed_s": 17.758961359999375,
+      "expected": {
+        "object": "green",
+        "destination": "yellow"
+      }
+    },
+    {
+      "seed": 9,
+      "success": true,
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold",
+        "place",
+        "release_retreat",
+        "place_hold"
+      ],
+      "instruction": "\u5c06\u7ea2\u8272\u79ef\u6728\u79fb\u5165\u7d2b\u8272\u5bb9\u5668",
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "red",
+          "bbox": [
+            528,
+            423,
+            560,
+            465
+          ]
+        },
+        "destination": {
+          "color": "purple",
+          "bbox": [
+            320,
+            375,
+            477,
+            552
+          ]
+        }
+      },
+      "destination_world": [
+        0.0866045132279396,
+        -0.1276037096977234,
+        0.08649517595767975
+      ],
+      "candidate_index": 0,
+      "tcp_target_world": [
+        [
+          0.5143533945083618,
+          0.3631007969379425,
+          -0.7769161462783813,
+          -0.10970553755760193
+        ],
+        [
+          0.22265079617500305,
+          -0.9314174056053162,
+          -0.2879038155078888,
+          -0.001252210233360529
+        ],
+        [
+          -0.8281710743904114,
+          -0.024896662682294846,
+          -0.5599222183227539,
+          0.0296950526535511
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "place_hold_s": 1.0,
+      "final_cube_position": [
+        0.07891757786273956,
+        -0.12867878377437592,
+        0.029999911785125732
+      ],
+      "bowl_position": [
+        0.0861668735742569,
+        -0.12652745842933655,
+        0.004999998956918716
+      ],
+      "min_bottom_during_hold_m": 0.11781390011310577,
+      "hold_s": 1.0,
+      "steps": 391,
+      "elapsed_s": 22.86589390199879,
+      "expected": {
+        "object": "red",
+        "destination": "purple"
+      }
+    }
+  ],
+  "successes": 10,
+  "total": 10,
+  "passed": true
+}

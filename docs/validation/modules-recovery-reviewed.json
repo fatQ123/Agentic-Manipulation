@@ -1,0 +1,19 @@
+{
+  "source": "recovery-recheck/summary.json",
+  "reason": "Validator now permits a reobserve-only round before the expected recovery; physical and VLM success criteria unchanged.",
+  "trials": [
+    {
+      "fault": "missed_grasp",
+      "original_check": true,
+      "passed": true,
+      "rounds": 2
+    },
+    {
+      "fault": "failed_release",
+      "original_check": false,
+      "passed": true,
+      "rounds": 3
+    }
+  ],
+  "passed": true
+}

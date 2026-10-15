@@ -1,0 +1,45 @@
+{
+  "process_peak_mib": 1142,
+  "required_free_mib": 1398,
+  "samples": [
+    10,
+    114,
+    196,
+    488,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142,
+    1142
+  ],
+  "viewer_resolution": [
+    960,
+    720
+  ],
+  "debug_figure_inches": [
+    10,
+    7
+  ],
+  "elapsed_s": 6.037318679002055,
+  "date": "2026-10-12",
+  "gpu": "RTX 3060 Laptop",
+  "total_mib": 6144,
+  "method": "nvidia-smi per-child PID sampling, with SAPIEN and Matplotlib windows",
+  "source": "outputs/modules-resource-calibration-20261012/",
+  "passed": true
+}

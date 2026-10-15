@@ -1,0 +1,2605 @@
+{
+  "modules-acceptance-20261013/continuous/task-001/result.json": {
+    "seed": 0,
+    "version": "v3",
+    "instruction": "把红色方块放进黄色容器",
+    "success": true,
+    "agent_status": "success",
+    "max_rounds": 3,
+    "timeout_s": 180.0,
+    "rounds": [
+      {
+        "round": 1,
+        "recovery": "regrasp",
+        "phases": [
+          "raise",
+          "transit",
+          "pregrasp",
+          "approach",
+          "close",
+          "lift",
+          "hold",
+          "place",
+          "release_retreat",
+          "place_hold"
+        ],
+        "plan_requests": 1,
+        "plan": {
+          "status": "ready",
+          "action": "pick_place",
+          "object": {
+            "color": "red",
+            "bbox": [
+              535,
+              401,
+              571,
+              452
+            ]
+          },
+          "destination": {
+            "color": "yellow",
+            "bbox": [
+              443,
+              491,
+              614,
+              672
+            ]
+          },
+          "steps": [
+            "LOCATE_OBJECT",
+            "LOCATE_DESTINATION",
+            "GRASP",
+            "LIFT",
+            "PLACE",
+            "VERIFY"
+          ]
+        },
+        "destination_world": [
+          0.08309967815876007,
+          0.13513948023319244,
+          0.08652167022228241
+        ],
+        "selection": {
+          "candidates": 81,
+          "opening": 0,
+          "orientation": 0,
+          "centering": 0,
+          "table": 0,
+          "ik": 0,
+          "selected_index": 0,
+          "selected_rank": 1
+        },
+        "candidate_index": 0,
+        "tcp_target_world": [
+          [
+            0.5908046960830688,
+            0.21760383248329163,
+            -0.7769161462783813,
+            -0.12371167540550232
+          ],
+          [
+            -0.026004623621702194,
+            -0.9573062658309937,
+            -0.2879038155078888,
+            -0.007139271590858698
+          ],
+          [
+            -0.8063954710960388,
+            0.19029827415943146,
+            -0.5599222183227539,
+            0.03000595048069954
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "placement_waypoints": {
+          "lift_pose": [
+            [
+              0.5908046960830688,
+              0.21760383248329163,
+              -0.7769161462783813,
+              -0.12371167540550232
+            ],
+            [
+              -0.026004623621702194,
+              -0.9573062658309937,
+              -0.2879038155078888,
+              -0.007139271590858698
+            ],
+            [
+              -0.8063954710960388,
+              0.19029827415943146,
+              -0.5599222183227539,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "upright_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              -0.12371167540550232
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              -0.007139271590858698
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pre_place_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07706823849072258
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              0.1286351823444746
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "place_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07706823849072258
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              0.1286351823444746
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.08973043379929098
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "release_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07706823849072258
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              0.1286351823444746
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.08973043379929098
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "retreat_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07706823849072258
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              0.1286351823444746
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "min_bottom_during_hold_m": 0.11761568486690521,
+        "hold_s": 1.0,
+        "pick_hold_success": true,
+        "place_hold_s": 1.0,
+        "place_hold_success": true,
+        "final_cube_position": [
+          0.06230098009109497,
+          0.14609378576278687,
+          0.02999991364777088
+        ],
+        "bowl_position": [
+          0.08272412419319153,
+          0.13622790575027466,
+          0.004999998956918716
+        ],
+        "truth": {
+          "success": true,
+          "hold_s": 1.0,
+          "cube_position": [
+            0.06230098009109497,
+            0.14609378576278687,
+            0.02999991364777088
+          ]
+        },
+        "verification_requests": 1,
+        "verdict": {
+          "reason": "The red cube is clearly visible resting inside the yellow bowl, and the gripper is not holding it, indicating the task is complete.",
+          "status": "success",
+          "recovery": null
+        },
+        "steps": 507
+      }
+    ],
+    "state": "SUCCESS",
+    "state_history": [
+      {
+        "state": "PLANNING",
+        "elapsed_s": 0.0029912200000126177,
+        "reason": ""
+      },
+      {
+        "state": "LOCATING",
+        "elapsed_s": 13.841211739000073,
+        "reason": ""
+      },
+      {
+        "state": "GRASPING",
+        "elapsed_s": 13.954444920000014,
+        "reason": ""
+      },
+      {
+        "state": "HOLDING",
+        "elapsed_s": 26.976550466999925,
+        "reason": ""
+      },
+      {
+        "state": "PLACING",
+        "elapsed_s": 27.113495889999967,
+        "reason": ""
+      },
+      {
+        "state": "VERIFYING",
+        "elapsed_s": 36.25681796999993,
+        "reason": ""
+      },
+      {
+        "state": "SUCCESS",
+        "elapsed_s": 41.16742361599995,
+        "reason": "The red cube is clearly visible resting inside the yellow bowl, and the gripper is not holding it, indicating the task is complete."
+      }
+    ],
+    "held_object": null,
+    "model": "qwen3.8-flash",
+    "plan": {
+      "status": "ready",
+      "action": "pick_place",
+      "object": {
+        "color": "red",
+        "bbox": [
+          535,
+          401,
+          571,
+          452
+        ]
+      },
+      "destination": {
+        "color": "yellow",
+        "bbox": [
+          443,
+          491,
+          614,
+          672
+        ]
+      },
+      "steps": [
+        "LOCATE_OBJECT",
+        "LOCATE_DESTINATION",
+        "GRASP",
+        "LIFT",
+        "PLACE",
+        "VERIFY"
+      ]
+    },
+    "stop_reason": "The red cube is clearly visible resting inside the yellow bowl, and the gripper is not holding it, indicating the task is complete.",
+    "resources": {
+      "grasp_required_free_mib": 1398,
+      "events": [
+        {
+          "phase": "plan",
+          "status": "complete",
+          "elapsed_s": 13.329225760999861
+        },
+        {
+          "phase": "grasp_inference",
+          "status": "complete",
+          "gpu_before": {
+            "total_mib": 6144,
+            "free_mib": 3935
+          },
+          "pid": 17828,
+          "process_peak_mib": 1142,
+          "returncode": 0,
+          "elapsed_s": 5.5821661600000425
+        },
+        {
+          "phase": "execute",
+          "status": "complete",
+          "elapsed_s": 13.004054628999938
+        },
+        {
+          "phase": "verification",
+          "status": "complete",
+          "elapsed_s": 4.592830951999986
+        }
+      ]
+    },
+    "steps": 507,
+    "elapsed_s": 41.355219615000124,
+    "vlm_judgments": {
+      "total": 1,
+      "false_success": 0,
+      "false_failure": 0,
+      "uncertain": 0
+    }
+  },
+  "modules-acceptance-20261013/continuous/task-002/result.json": {
+    "seed": 0,
+    "version": "v3",
+    "instruction": "把绿色方块放进紫色容器",
+    "success": true,
+    "agent_status": "success",
+    "max_rounds": 3,
+    "timeout_s": 180.0,
+    "rounds": [
+      {
+        "round": 1,
+        "recovery": "regrasp",
+        "phases": [
+          "raise",
+          "transit",
+          "pregrasp",
+          "approach",
+          "close",
+          "lift",
+          "hold",
+          "place",
+          "release_retreat",
+          "place_hold"
+        ],
+        "plan_requests": 1,
+        "plan": {
+          "status": "ready",
+          "action": "pick_place",
+          "object": {
+            "color": "green",
+            "bbox": [
+              606,
+              464,
+              645,
+              519
+            ]
+          },
+          "destination": {
+            "color": "purple",
+            "bbox": [
+              328,
+              385,
+              486,
+              549
+            ]
+          },
+          "steps": [
+            "LOCATE_OBJECT",
+            "LOCATE_DESTINATION",
+            "GRASP",
+            "LIFT",
+            "PLACE",
+            "VERIFY"
+          ]
+        },
+        "destination_world": [
+          0.078875333070755,
+          -0.12554526329040527,
+          0.08649517595767975
+        ],
+        "selection": {
+          "candidates": 93,
+          "opening": 0,
+          "orientation": 0,
+          "centering": 0,
+          "table": 0,
+          "ik": 0,
+          "selected_index": 0,
+          "selected_rank": 1
+        },
+        "candidate_index": 0,
+        "tcp_target_world": [
+          [
+            0.5908046960830688,
+            0.21760383248329163,
+            -0.7769161462783813,
+            -0.12891027331352234
+          ],
+          [
+            -0.026004623621702194,
+            -0.9573062658309937,
+            -0.2879038155078888,
+            0.1492050290107727
+          ],
+          [
+            -0.8063954710960388,
+            0.19029827415943146,
+            -0.5599222183227539,
+            0.0297900028526783
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "placement_waypoints": {
+          "lift_pose": [
+            [
+              0.5908046960830688,
+              0.21760383248329163,
+              -0.7769161462783813,
+              -0.12891027331352234
+            ],
+            [
+              -0.026004623621702194,
+              -0.9573062658309937,
+              -0.2879038155078888,
+              0.1492050290107727
+            ],
+            [
+              -0.8063954710960388,
+              0.19029827415943146,
+              -0.5599222183227539,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "upright_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              -0.12891027331352234
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              0.1492050290107727
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pre_place_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07286117646024393
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              -0.13320574146424918
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "place_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07286117646024393
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              -0.13320574146424918
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.08843350623064206
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "release_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07286117646024393
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              -0.13320574146424918
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.08843350623064206
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "retreat_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07286117646024393
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              -0.13320574146424918
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "min_bottom_during_hold_m": 0.11751650273799896,
+        "hold_s": 1.0,
+        "pick_hold_success": true,
+        "place_hold_s": 1.0,
+        "place_hold_success": true,
+        "final_cube_position": [
+          0.06362733989953995,
+          -0.13014668226242065,
+          0.02999991551041603
+        ],
+        "bowl_position": [
+          0.07845649868249893,
+          -0.12438765913248062,
+          0.004999998956918716
+        ],
+        "truth": {
+          "success": true,
+          "hold_s": 1.0,
+          "cube_position": [
+            0.06362733989953995,
+            -0.13014668226242065,
+            0.02999991551041603
+          ]
+        },
+        "verification_requests": 1,
+        "verdict": {
+          "status": "success",
+          "reason": "The green cube is visible resting inside the purple bowl. The gripper is retracted and empty, indicating the object has been released.",
+          "recovery": null
+        },
+        "steps": 536
+      }
+    ],
+    "state": "SUCCESS",
+    "state_history": [
+      {
+        "state": "PLANNING",
+        "elapsed_s": 0.0027738799999497132,
+        "reason": ""
+      },
+      {
+        "state": "LOCATING",
+        "elapsed_s": 21.50491186299996,
+        "reason": ""
+      },
+      {
+        "state": "GRASPING",
+        "elapsed_s": 21.669789319000074,
+        "reason": ""
+      },
+      {
+        "state": "HOLDING",
+        "elapsed_s": 35.30917479300001,
+        "reason": ""
+      },
+      {
+        "state": "PLACING",
+        "elapsed_s": 35.44583295000007,
+        "reason": ""
+      },
+      {
+        "state": "VERIFYING",
+        "elapsed_s": 45.595854846000066,
+        "reason": ""
+      },
+      {
+        "state": "SUCCESS",
+        "elapsed_s": 52.56226046599977,
+        "reason": "The green cube is visible resting inside the purple bowl. The gripper is retracted and empty, indicating the object has been released."
+      }
+    ],
+    "held_object": null,
+    "model": "qwen3.8-flash",
+    "plan": {
+      "status": "ready",
+      "action": "pick_place",
+      "object": {
+        "color": "green",
+        "bbox": [
+          606,
+          464,
+          645,
+          519
+        ]
+      },
+      "destination": {
+        "color": "purple",
+        "bbox": [
+          328,
+          385,
+          486,
+          549
+        ]
+      },
+      "steps": [
+        "LOCATE_OBJECT",
+        "LOCATE_DESTINATION",
+        "GRASP",
+        "LIFT",
+        "PLACE",
+        "VERIFY"
+      ]
+    },
+    "stop_reason": "The green cube is visible resting inside the purple bowl. The gripper is retracted and empty, indicating the object has been released.",
+    "resources": {
+      "grasp_required_free_mib": 1398,
+      "events": [
+        {
+          "phase": "plan",
+          "status": "complete",
+          "elapsed_s": 20.846959760000118
+        },
+        {
+          "phase": "grasp_inference",
+          "status": "complete",
+          "gpu_before": {
+            "total_mib": 6144,
+            "free_mib": 3940
+          },
+          "pid": 18155,
+          "process_peak_mib": 1142,
+          "returncode": 0,
+          "elapsed_s": 5.94746725899995
+        },
+        {
+          "phase": "execute",
+          "status": "complete",
+          "elapsed_s": 13.70975943999997
+        },
+        {
+          "phase": "verification",
+          "status": "complete",
+          "elapsed_s": 6.65161649300012
+        }
+      ]
+    },
+    "steps": 536,
+    "elapsed_s": 52.75329475799981,
+    "vlm_judgments": {
+      "total": 1,
+      "false_success": 0,
+      "false_failure": 0,
+      "uncertain": 0
+    }
+  },
+  "modules-acceptance-20261013/continuous/task-003/result.json": {
+    "seed": 0,
+    "version": "v3",
+    "instruction": "把蓝色方块放进黄色容器",
+    "success": true,
+    "agent_status": "success",
+    "max_rounds": 3,
+    "timeout_s": 180.0,
+    "rounds": [
+      {
+        "round": 1,
+        "recovery": "regrasp",
+        "phases": [
+          "raise",
+          "transit",
+          "pregrasp",
+          "approach",
+          "close",
+          "lift",
+          "hold",
+          "place",
+          "release_retreat",
+          "place_hold"
+        ],
+        "plan_requests": 1,
+        "plan": {
+          "status": "ready",
+          "action": "pick_place",
+          "object": {
+            "color": "blue",
+            "bbox": [
+              471,
+              355,
+              500,
+              399
+            ]
+          },
+          "destination": {
+            "color": "yellow",
+            "bbox": [
+              443,
+              494,
+              612,
+              668
+            ]
+          },
+          "steps": [
+            "LOCATE_OBJECT",
+            "LOCATE_DESTINATION",
+            "GRASP",
+            "LIFT",
+            "PLACE",
+            "VERIFY"
+          ]
+        },
+        "destination_world": [
+          0.08309967815876007,
+          0.13513948023319244,
+          0.08652167022228241
+        ],
+        "selection": {
+          "candidates": 79,
+          "opening": 0,
+          "orientation": 0,
+          "centering": 0,
+          "table": 0,
+          "ik": 0,
+          "selected_index": 0,
+          "selected_rank": 1
+        },
+        "candidate_index": 0,
+        "tcp_target_world": [
+          [
+            0.5621570944786072,
+            0.38701513409614563,
+            -0.730889081954956,
+            -0.12992683053016663
+          ],
+          [
+            0.5037248134613037,
+            -0.8611401319503784,
+            -0.06854911148548126,
+            -0.16175352036952972
+          ],
+          [
+            -0.6559273600578308,
+            -0.3296315670013428,
+            -0.6790450811386108,
+            0.03421472758054733
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "placement_waypoints": {
+          "lift_pose": [
+            [
+              0.5621570944786072,
+              0.38701513409614563,
+              -0.730889081954956,
+              -0.12992683053016663
+            ],
+            [
+              0.5037248134613037,
+              -0.8611401319503784,
+              -0.06854911148548126,
+              -0.16175352036952972
+            ],
+            [
+              -0.6559273600578308,
+              -0.3296315670013428,
+              -0.6790450811386108,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "upright_pose": [
+            [
+              0.9121187642642763,
+              0.4099260419600218,
+              0.0,
+              -0.12992683053016663
+            ],
+            [
+              0.4099260419600218,
+              -0.9121187642642763,
+              0.0,
+              -0.16175352036952972
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pre_place_pose": [
+            [
+              0.9121187642642763,
+              0.4099260419600218,
+              0.0,
+              0.06163021470047629
+            ],
+            [
+              0.4099260419600218,
+              -0.9121187642642763,
+              0.0,
+              0.1297584157542014
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "place_pose": [
+            [
+              0.9121187642642763,
+              0.4099260419600218,
+              0.0,
+              0.06163021470047629
+            ],
+            [
+              0.4099260419600218,
+              -0.9121187642642763,
+              0.0,
+              0.1297584157542014
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.08236332131499702
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "release_pose": [
+            [
+              0.9121187642642763,
+              0.4099260419600218,
+              0.0,
+              0.06163021470047629
+            ],
+            [
+              0.4099260419600218,
+              -0.9121187642642763,
+              0.0,
+              0.1297584157542014
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.08236332131499702
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "retreat_pose": [
+            [
+              0.9121187642642763,
+              0.4099260419600218,
+              0.0,
+              0.06163021470047629
+            ],
+            [
+              0.4099260419600218,
+              -0.9121187642642763,
+              0.0,
+              0.1297584157542014
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "min_bottom_during_hold_m": 0.11720201373100281,
+        "hold_s": 1.0,
+        "pick_hold_success": true,
+        "place_hold_s": 1.0,
+        "place_hold_success": true,
+        "final_cube_position": [
+          0.12483938038349152,
+          0.10210531204938889,
+          0.029999908059835434
+        ],
+        "bowl_position": [
+          0.08272412419319153,
+          0.13622790575027466,
+          0.004999998956918716
+        ],
+        "truth": {
+          "success": true,
+          "hold_s": 1.0,
+          "cube_position": [
+            0.12483938038349152,
+            0.10210531204938889,
+            0.029999908059835434
+          ]
+        },
+        "verification_requests": 1,
+        "verdict": {
+          "status": "success",
+          "reason": "The image shows a blue cube resting inside the yellow bowl, and the gripper is retracted and not holding the object.",
+          "recovery": null
+        },
+        "steps": 534
+      }
+    ],
+    "state": "SUCCESS",
+    "state_history": [
+      {
+        "state": "PLANNING",
+        "elapsed_s": 0.002753596000275138,
+        "reason": ""
+      },
+      {
+        "state": "LOCATING",
+        "elapsed_s": 7.939576774000216,
+        "reason": ""
+      },
+      {
+        "state": "GRASPING",
+        "elapsed_s": 8.088801886000056,
+        "reason": ""
+      },
+      {
+        "state": "HOLDING",
+        "elapsed_s": 21.055762759000118,
+        "reason": ""
+      },
+      {
+        "state": "PLACING",
+        "elapsed_s": 21.197869899000125,
+        "reason": ""
+      },
+      {
+        "state": "VERIFYING",
+        "elapsed_s": 31.369638057999964,
+        "reason": ""
+      },
+      {
+        "state": "SUCCESS",
+        "elapsed_s": 42.62320445000023,
+        "reason": "The image shows a blue cube resting inside the yellow bowl, and the gripper is retracted and not holding the object."
+      }
+    ],
+    "held_object": null,
+    "model": "qwen3.8-flash",
+    "plan": {
+      "status": "ready",
+      "action": "pick_place",
+      "object": {
+        "color": "blue",
+        "bbox": [
+          471,
+          355,
+          500,
+          399
+        ]
+      },
+      "destination": {
+        "color": "yellow",
+        "bbox": [
+          443,
+          494,
+          612,
+          668
+        ]
+      },
+      "steps": [
+        "LOCATE_OBJECT",
+        "LOCATE_DESTINATION",
+        "GRASP",
+        "LIFT",
+        "PLACE",
+        "VERIFY"
+      ]
+    },
+    "stop_reason": "The image shows a blue cube resting inside the yellow bowl, and the gripper is retracted and not holding the object.",
+    "resources": {
+      "grasp_required_free_mib": 1398,
+      "events": [
+        {
+          "phase": "plan",
+          "status": "complete",
+          "elapsed_s": 7.30828862899989
+        },
+        {
+          "phase": "grasp_inference",
+          "status": "complete",
+          "gpu_before": {
+            "total_mib": 6144,
+            "free_mib": 3697
+          },
+          "pid": 18444,
+          "process_peak_mib": 1142,
+          "returncode": 0,
+          "elapsed_s": 5.2517167579999295
+        },
+        {
+          "phase": "execute",
+          "status": "complete",
+          "elapsed_s": 14.082375211999988
+        },
+        {
+          "phase": "verification",
+          "status": "complete",
+          "elapsed_s": 10.945596542999738
+        }
+      ]
+    },
+    "steps": 534,
+    "elapsed_s": 42.810967921000156,
+    "vlm_judgments": {
+      "total": 1,
+      "false_success": 0,
+      "false_failure": 0,
+      "uncertain": 0
+    }
+  },
+  "modules-acceptance-20261013/continuous/task-004/result.json": {
+    "seed": 0,
+    "version": "v3",
+    "instruction": "抓起红色方块",
+    "success": false,
+    "agent_status": "stopped",
+    "max_rounds": 3,
+    "timeout_s": 180.0,
+    "rounds": [
+      {
+        "round": 1,
+        "recovery": "regrasp",
+        "phases": [
+          "raise",
+          "transit",
+          "pregrasp",
+          "approach",
+          "close",
+          "lift",
+          "hold"
+        ],
+        "plan_requests": 1,
+        "plan": {
+          "status": "ready",
+          "action": "pick",
+          "object": {
+            "color": "red",
+            "bbox": [
+              536,
+              405,
+              570,
+              457
+            ]
+          },
+          "destination": null,
+          "steps": [
+            "LOCATE_OBJECT",
+            "GRASP",
+            "LIFT",
+            "HOLD",
+            "VERIFY"
+          ]
+        },
+        "selection": {
+          "candidates": 81,
+          "opening": 0,
+          "orientation": 0,
+          "centering": 0,
+          "table": 0,
+          "ik": 0,
+          "selected_index": 0,
+          "selected_rank": 1
+        },
+        "candidate_index": 0,
+        "tcp_target_world": [
+          [
+            0.5908046960830688,
+            0.21760383248329163,
+            -0.7769161462783813,
+            -0.12371167540550232
+          ],
+          [
+            -0.026004623621702194,
+            -0.9573062658309937,
+            -0.2879038155078888,
+            -0.007139271590858698
+          ],
+          [
+            -0.8063954710960388,
+            0.19029827415943146,
+            -0.5599222183227539,
+            0.03000595048069954
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "min_bottom_during_hold_m": 0.11761555075645447,
+        "hold_s": 1.0,
+        "pick_hold_success": true,
+        "truth": {
+          "success": true,
+          "hold_s": 1.0,
+          "cube_position": [
+            -0.12405886501073837,
+            -0.007332749664783478,
+            0.2366168349981308
+          ]
+        },
+        "verification_requests": 1,
+        "verdict": {
+          "status": "failure",
+          "reason": "The red cube is visible resting on the table surface near the gripper, not held between the fingers.",
+          "recovery": "regrasp"
+        },
+        "steps": 245
+      }
+    ],
+    "state": "STOPPED",
+    "state_history": [
+      {
+        "state": "PLANNING",
+        "elapsed_s": 0.002706677000333002,
+        "reason": ""
+      },
+      {
+        "state": "LOCATING",
+        "elapsed_s": 8.451869825000358,
+        "reason": ""
+      },
+      {
+        "state": "GRASPING",
+        "elapsed_s": 8.55095910900036,
+        "reason": ""
+      },
+      {
+        "state": "HOLDING",
+        "elapsed_s": 21.64060104100008,
+        "reason": ""
+      },
+      {
+        "state": "VERIFYING",
+        "elapsed_s": 23.19324709600005,
+        "reason": ""
+      },
+      {
+        "state": "RECOVERING",
+        "elapsed_s": 30.730381189000127,
+        "reason": "The red cube is visible resting on the table surface near the gripper, not held between the fingers."
+      },
+      {
+        "state": "STOPPED",
+        "elapsed_s": 30.88231405500028,
+        "reason": "unsafe regrasp: target is still held"
+      }
+    ],
+    "held_object": "red",
+    "model": "qwen3.8-flash",
+    "plan": {
+      "status": "ready",
+      "action": "pick",
+      "object": {
+        "color": "red",
+        "bbox": [
+          536,
+          405,
+          570,
+          457
+        ]
+      },
+      "destination": null,
+      "steps": [
+        "LOCATE_OBJECT",
+        "GRASP",
+        "LIFT",
+        "HOLD",
+        "VERIFY"
+      ]
+    },
+    "failure": "unsafe regrasp: target is still held",
+    "resources": {
+      "grasp_required_free_mib": 1398,
+      "events": [
+        {
+          "phase": "plan",
+          "status": "complete",
+          "elapsed_s": 7.9657325849998415
+        },
+        {
+          "phase": "grasp_inference",
+          "status": "complete",
+          "gpu_before": {
+            "total_mib": 6144,
+            "free_mib": 3680
+          },
+          "pid": 18749,
+          "process_peak_mib": 1142,
+          "returncode": 0,
+          "elapsed_s": 5.4028851490002126
+        },
+        {
+          "phase": "execute",
+          "status": "complete",
+          "elapsed_s": 7.260090533000039
+        },
+        {
+          "phase": "verification",
+          "status": "complete",
+          "elapsed_s": 7.229411350000191
+        }
+      ]
+    },
+    "steps": 245,
+    "elapsed_s": 30.92306511700008,
+    "vlm_judgments": {
+      "total": 1,
+      "false_success": 0,
+      "false_failure": 1,
+      "uncertain": 0
+    }
+  },
+  "modules-acceptance-20261013/continuous/session.json": {
+    "seed": 0,
+    "tasks": [
+      {
+        "instruction": "把红色方块放进黄色容器",
+        "output": "task-001",
+        "success": true,
+        "agent_status": "success",
+        "steps": 507,
+        "elapsed_s": 41.355219615000124,
+        "state": "SUCCESS",
+        "held_object": null
+      },
+      {
+        "instruction": "把绿色方块放进紫色容器",
+        "output": "task-002",
+        "success": true,
+        "agent_status": "success",
+        "steps": 536,
+        "elapsed_s": 52.75329475799981,
+        "state": "SUCCESS",
+        "held_object": null
+      },
+      {
+        "instruction": "把蓝色方块放进黄色容器",
+        "output": "task-003",
+        "success": true,
+        "agent_status": "success",
+        "steps": 534,
+        "elapsed_s": 42.810967921000156,
+        "state": "SUCCESS",
+        "held_object": null
+      },
+      {
+        "instruction": "抓起红色方块",
+        "output": "task-004",
+        "success": false,
+        "agent_status": "stopped",
+        "steps": 245,
+        "elapsed_s": 30.92306511700008,
+        "state": "STOPPED",
+        "held_object": "red"
+      }
+    ],
+    "events": [
+      {
+        "command": "reset",
+        "after_tasks": 0
+      },
+      {
+        "command": "reset",
+        "after_tasks": 3
+      }
+    ],
+    "blocked": true,
+    "state": "STOPPED",
+    "held_object": "red",
+    "tasks_since_reset": 1
+  },
+  "modules-acceptance-20261013/held-recheck/task-001/result.json": {
+    "seed": 0,
+    "version": "v3",
+    "instruction": "抓起红色方块",
+    "success": true,
+    "agent_status": "success",
+    "max_rounds": 3,
+    "timeout_s": 180.0,
+    "rounds": [
+      {
+        "round": 1,
+        "recovery": "regrasp",
+        "phases": [
+          "raise",
+          "transit",
+          "pregrasp",
+          "approach",
+          "close",
+          "lift",
+          "hold"
+        ],
+        "plan_requests": 1,
+        "plan": {
+          "status": "ready",
+          "action": "pick",
+          "object": {
+            "color": "red",
+            "bbox": [
+              535,
+              408,
+              571,
+              461
+            ]
+          },
+          "destination": null,
+          "steps": [
+            "LOCATE_OBJECT",
+            "GRASP",
+            "LIFT",
+            "HOLD",
+            "VERIFY"
+          ]
+        },
+        "selection": {
+          "candidates": 81,
+          "opening": 0,
+          "orientation": 0,
+          "centering": 0,
+          "table": 0,
+          "ik": 0,
+          "selected_index": 0,
+          "selected_rank": 1
+        },
+        "candidate_index": 0,
+        "tcp_target_world": [
+          [
+            0.5908046960830688,
+            0.21760383248329163,
+            -0.7769161462783813,
+            -0.12371167540550232
+          ],
+          [
+            -0.026004623621702194,
+            -0.9573062658309937,
+            -0.2879038155078888,
+            -0.007139271590858698
+          ],
+          [
+            -0.8063954710960388,
+            0.19029827415943146,
+            -0.5599222183227539,
+            0.03000595048069954
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "observation_pose": [
+          [
+            0.9751253208334684,
+            0.22165425479657627,
+            0.0,
+            -0.12371167540550232
+          ],
+          [
+            0.22165425479657627,
+            -0.9751253208334684,
+            0.0,
+            -0.007139271590858698
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.25
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "min_bottom_during_hold_m": 0.11761568486690521,
+        "hold_s": 1.0,
+        "pick_hold_success": true,
+        "truth": {
+          "success": true,
+          "hold_s": 1.0,
+          "cube_position": [
+            -0.1158064529299736,
+            -0.004008184652775526,
+            0.24255503714084625
+          ]
+        },
+        "verification_requests": 1,
+        "verdict": {
+          "reason": "The red cube is clearly held between the fingers of the robotic gripper and is elevated above the table surface.",
+          "recovery": null,
+          "status": "success"
+        },
+        "steps": 260
+      }
+    ],
+    "state": "SUCCESS",
+    "state_history": [
+      {
+        "state": "PLANNING",
+        "elapsed_s": 0.0029126419999556674,
+        "reason": ""
+      },
+      {
+        "state": "LOCATING",
+        "elapsed_s": 10.235219863000111,
+        "reason": ""
+      },
+      {
+        "state": "GRASPING",
+        "elapsed_s": 10.333715539999957,
+        "reason": ""
+      },
+      {
+        "state": "HOLDING",
+        "elapsed_s": 23.30916170899991,
+        "reason": ""
+      },
+      {
+        "state": "VERIFYING",
+        "elapsed_s": 25.22955205800008,
+        "reason": ""
+      },
+      {
+        "state": "SUCCESS",
+        "elapsed_s": 33.22517887799995,
+        "reason": "The red cube is clearly held between the fingers of the robotic gripper and is elevated above the table surface."
+      }
+    ],
+    "held_object": "red",
+    "model": "qwen3.8-flash",
+    "plan": {
+      "status": "ready",
+      "action": "pick",
+      "object": {
+        "color": "red",
+        "bbox": [
+          535,
+          408,
+          571,
+          461
+        ]
+      },
+      "destination": null,
+      "steps": [
+        "LOCATE_OBJECT",
+        "GRASP",
+        "LIFT",
+        "HOLD",
+        "VERIFY"
+      ]
+    },
+    "stop_reason": "The red cube is clearly held between the fingers of the robotic gripper and is elevated above the table surface.",
+    "resources": {
+      "grasp_required_free_mib": 1398,
+      "events": [
+        {
+          "phase": "plan",
+          "status": "complete",
+          "elapsed_s": 9.751051771999755
+        },
+        {
+          "phase": "grasp_inference",
+          "status": "complete",
+          "gpu_before": {
+            "total_mib": 6144,
+            "free_mib": 3983
+          },
+          "pid": 21538,
+          "process_peak_mib": 1142,
+          "returncode": 0,
+          "elapsed_s": 5.410452238999824
+        },
+        {
+          "phase": "execute",
+          "status": "complete",
+          "elapsed_s": 7.121615992999978
+        },
+        {
+          "phase": "verification",
+          "status": "complete",
+          "elapsed_s": 7.700035664000097
+        }
+      ]
+    },
+    "steps": 260,
+    "elapsed_s": 33.42158864699968,
+    "vlm_judgments": {
+      "total": 1,
+      "false_success": 0,
+      "false_failure": 0,
+      "uncertain": 0
+    }
+  },
+  "modules-acceptance-20261013/held-recheck/task-002/result.json": {
+    "seed": 0,
+    "version": "v3",
+    "instruction": "抓起蓝色方块",
+    "success": false,
+    "agent_status": "stopped",
+    "max_rounds": 3,
+    "timeout_s": 180.0,
+    "rounds": [
+      {
+        "round": 1,
+        "recovery": "regrasp",
+        "phases": [],
+        "plan_requests": 1
+      }
+    ],
+    "state": "HOLDING",
+    "state_history": [
+      {
+        "state": "PLANNING",
+        "elapsed_s": 0.0029401120000329684,
+        "reason": ""
+      },
+      {
+        "state": "HOLDING",
+        "elapsed_s": 11.799945352000123,
+        "reason": "Robot is already holding red cube. Reset or place the same cube first."
+      }
+    ],
+    "held_object": "red",
+    "model": "qwen3.8-flash",
+    "failure": "Robot is already holding red cube. Reset or place the same cube first.",
+    "resources": {
+      "grasp_required_free_mib": 1398,
+      "events": [
+        {
+          "phase": "plan",
+          "status": "failed",
+          "elapsed_s": 11.32186688999991
+        }
+      ]
+    },
+    "steps": 0,
+    "elapsed_s": 11.799976853999851,
+    "vlm_judgments": {
+      "total": 0,
+      "false_success": 0,
+      "false_failure": 0,
+      "uncertain": 0
+    }
+  },
+  "modules-acceptance-20261013/held-recheck/task-003/result.json": {
+    "seed": 0,
+    "version": "v3",
+    "instruction": "把红色方块放进黄色容器",
+    "success": true,
+    "agent_status": "success",
+    "max_rounds": 3,
+    "timeout_s": 180.0,
+    "rounds": [
+      {
+        "round": 1,
+        "recovery": "replace",
+        "phases": [
+          "place",
+          "release_retreat",
+          "place_hold"
+        ],
+        "plan_requests": 1,
+        "plan": {
+          "status": "ready",
+          "action": "pick_place",
+          "object": {
+            "color": "red",
+            "bbox": [
+              535,
+              250,
+              575,
+              305
+            ]
+          },
+          "destination": {
+            "color": "yellow",
+            "bbox": [
+              435,
+              490,
+              610,
+              695
+            ]
+          },
+          "steps": [
+            "LOCATE_DESTINATION",
+            "PLAN_PLACE",
+            "PLACE",
+            "VERIFY"
+          ]
+        },
+        "destination_world": [
+          0.08309967815876007,
+          0.13513948023319244,
+          0.08652167022228241
+        ],
+        "placement_waypoints": {
+          "lift_pose": [
+            [
+              0.9752124547958374,
+              0.21766673028469086,
+              -0.03977258875966072,
+              -0.12359164655208588
+            ],
+            [
+              0.21733860671520233,
+              -0.9760167598724365,
+              -0.01244810875505209,
+              -0.007397937588393688
+            ],
+            [
+              -0.041528258472681046,
+              0.0034954301081597805,
+              -0.9991310834884644,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "upright_pose": [
+            [
+              0.9760228395462036,
+              0.2176680862903595,
+              0.0,
+              -0.12359164655208588
+            ],
+            [
+              0.2176680862903595,
+              -0.9760228395462036,
+              0.0,
+              -0.007397937588393688
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pre_place_pose": [
+            [
+              0.9760228395462036,
+              0.2176680862903595,
+              0.0,
+              0.06776847252862656
+            ],
+            [
+              0.2176680862903595,
+              -0.9760228395462036,
+              0.0,
+              0.1320295828208539
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "place_pose": [
+            [
+              0.9760228395462036,
+              0.2176680862903595,
+              0.0,
+              0.06776847252862656
+            ],
+            [
+              0.2176680862903595,
+              -0.9760228395462036,
+              0.0,
+              0.1320295828208539
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.09181979019194841
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "release_pose": [
+            [
+              0.9760228395462036,
+              0.2176680862903595,
+              0.0,
+              0.06776847252862656
+            ],
+            [
+              0.2176680862903595,
+              -0.9760228395462036,
+              0.0,
+              0.1320295828208539
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.09181979019194841
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "retreat_pose": [
+            [
+              0.9760228395462036,
+              0.2176680862903595,
+              0.0,
+              0.06776847252862656
+            ],
+            [
+              0.2176680862903595,
+              -0.9760228395462036,
+              0.0,
+              0.1320295828208539
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "place_hold_s": 1.0,
+        "place_hold_success": true,
+        "final_cube_position": [
+          0.059727851301431656,
+          0.13744328916072845,
+          0.029999906197190285
+        ],
+        "bowl_position": [
+          0.08272412419319153,
+          0.13622790575027466,
+          0.004999998956918716
+        ],
+        "truth": {
+          "success": true,
+          "hold_s": 1.0,
+          "cube_position": [
+            0.059727851301431656,
+            0.13744328916072845,
+            0.029999906197190285
+          ]
+        },
+        "verification_requests": 1,
+        "verdict": {
+          "status": "success",
+          "reason": "The red cube is clearly visible inside the yellow bowl.",
+          "recovery": null
+        },
+        "steps": 267
+      }
+    ],
+    "state": "SUCCESS",
+    "state_history": [
+      {
+        "state": "PLANNING",
+        "elapsed_s": 0.0030130149998512934,
+        "reason": ""
+      },
+      {
+        "state": "LOCATING",
+        "elapsed_s": 8.42701370199984,
+        "reason": ""
+      },
+      {
+        "state": "PLACING",
+        "elapsed_s": 9.038597995000146,
+        "reason": ""
+      },
+      {
+        "state": "VERIFYING",
+        "elapsed_s": 17.106025425000098,
+        "reason": ""
+      },
+      {
+        "state": "SUCCESS",
+        "elapsed_s": 24.17516793599998,
+        "reason": "The red cube is clearly visible inside the yellow bowl."
+      }
+    ],
+    "held_object": null,
+    "model": "qwen3.8-flash",
+    "plan": {
+      "status": "ready",
+      "action": "pick_place",
+      "object": {
+        "color": "red",
+        "bbox": [
+          535,
+          250,
+          575,
+          305
+        ]
+      },
+      "destination": {
+        "color": "yellow",
+        "bbox": [
+          435,
+          490,
+          610,
+          695
+        ]
+      },
+      "steps": [
+        "LOCATE_DESTINATION",
+        "PLAN_PLACE",
+        "PLACE",
+        "VERIFY"
+      ]
+    },
+    "stop_reason": "The red cube is clearly visible inside the yellow bowl.",
+    "resources": {
+      "grasp_required_free_mib": 1398,
+      "events": [
+        {
+          "phase": "plan",
+          "status": "complete",
+          "elapsed_s": 7.745296819000032
+        },
+        {
+          "phase": "execute",
+          "status": "complete",
+          "elapsed_s": 4.822087724000085
+        },
+        {
+          "phase": "verification",
+          "status": "complete",
+          "elapsed_s": 6.776727891000064
+        }
+      ]
+    },
+    "steps": 267,
+    "elapsed_s": 24.365285676999974,
+    "vlm_judgments": {
+      "total": 1,
+      "false_success": 0,
+      "false_failure": 0,
+      "uncertain": 0
+    }
+  },
+  "modules-acceptance-20261013/held-recheck/session.json": {
+    "seed": 0,
+    "tasks": [
+      {
+        "instruction": "抓起红色方块",
+        "output": "task-001",
+        "success": true,
+        "agent_status": "success",
+        "steps": 260,
+        "elapsed_s": 33.42158864699968,
+        "state": "SUCCESS",
+        "held_object": "red"
+      },
+      {
+        "instruction": "抓起蓝色方块",
+        "output": "task-002",
+        "success": false,
+        "agent_status": "stopped",
+        "steps": 0,
+        "elapsed_s": 11.799976853999851,
+        "state": "HOLDING",
+        "held_object": "red"
+      },
+      {
+        "instruction": "把红色方块放进黄色容器",
+        "output": "task-003",
+        "success": true,
+        "agent_status": "success",
+        "steps": 267,
+        "elapsed_s": 24.365285676999974,
+        "state": "SUCCESS",
+        "held_object": null
+      }
+    ],
+    "events": [
+      {
+        "command": "reset",
+        "after_tasks": 0
+      }
+    ],
+    "blocked": false,
+    "state": "IDLE",
+    "held_object": null,
+    "tasks_since_reset": 3
+  },
+  "modules-demo-complete-20261013/task-001/result.json": {
+    "seed": 0,
+    "version": "v3",
+    "instruction": "把红色方块放进黄色容器",
+    "success": true,
+    "agent_status": "success",
+    "max_rounds": 3,
+    "timeout_s": 180.0,
+    "rounds": [
+      {
+        "round": 1,
+        "recovery": "regrasp",
+        "phases": [
+          "raise",
+          "transit",
+          "pregrasp",
+          "approach",
+          "close",
+          "lift",
+          "hold",
+          "place",
+          "release_retreat",
+          "place_hold"
+        ],
+        "plan_requests": 1,
+        "plan": {
+          "status": "ready",
+          "action": "pick_place",
+          "object": {
+            "color": "red",
+            "bbox": [
+              533,
+              406,
+              572,
+              456
+            ]
+          },
+          "destination": {
+            "color": "yellow",
+            "bbox": [
+              445,
+              495,
+              612,
+              675
+            ]
+          },
+          "steps": [
+            "LOCATE_OBJECT",
+            "LOCATE_DESTINATION",
+            "GRASP",
+            "LIFT",
+            "PLACE",
+            "VERIFY"
+          ]
+        },
+        "destination_world": [
+          0.08309967815876007,
+          0.13513948023319244,
+          0.08652167022228241
+        ],
+        "selection": {
+          "candidates": 81,
+          "opening": 0,
+          "orientation": 0,
+          "centering": 0,
+          "table": 0,
+          "ik": 0,
+          "selected_index": 0,
+          "selected_rank": 1
+        },
+        "candidate_index": 0,
+        "tcp_target_world": [
+          [
+            0.5908046960830688,
+            0.21760383248329163,
+            -0.7769161462783813,
+            -0.12371167540550232
+          ],
+          [
+            -0.026004623621702194,
+            -0.9573062658309937,
+            -0.2879038155078888,
+            -0.007139271590858698
+          ],
+          [
+            -0.8063954710960388,
+            0.19029827415943146,
+            -0.5599222183227539,
+            0.03000595048069954
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "placement_waypoints": {
+          "lift_pose": [
+            [
+              0.5908046960830688,
+              0.21760383248329163,
+              -0.7769161462783813,
+              -0.12371167540550232
+            ],
+            [
+              -0.026004623621702194,
+              -0.9573062658309937,
+              -0.2879038155078888,
+              -0.007139271590858698
+            ],
+            [
+              -0.8063954710960388,
+              0.19029827415943146,
+              -0.5599222183227539,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "upright_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              -0.12371167540550232
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              -0.007139271590858698
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "pre_place_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07706823849072258
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              0.1286351823444746
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "place_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07706823849072258
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              0.1286351823444746
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.08973043379929098
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "release_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07706823849072258
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              0.1286351823444746
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.08973043379929098
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "retreat_pose": [
+            [
+              0.9751253208334684,
+              0.22165425479657627,
+              0.0,
+              0.07706823849072258
+            ],
+            [
+              0.22165425479657627,
+              -0.9751253208334684,
+              0.0,
+              0.1286351823444746
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0,
+              0.25
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "min_bottom_during_hold_m": 0.11761568486690521,
+        "hold_s": 1.0,
+        "pick_hold_success": true,
+        "place_hold_s": 1.0,
+        "place_hold_success": true,
+        "final_cube_position": [
+          0.06230098009109497,
+          0.14609378576278687,
+          0.02999991364777088
+        ],
+        "bowl_position": [
+          0.08272412419319153,
+          0.13622790575027466,
+          0.004999998956918716
+        ],
+        "truth": {
+          "success": true,
+          "hold_s": 1.0,
+          "cube_position": [
+            0.06230098009109497,
+            0.14609378576278687,
+            0.02999991364777088
+          ]
+        },
+        "verification_requests": 1,
+        "verdict": {
+          "status": "success",
+          "reason": "The red cube is clearly visible resting inside the yellow bowl, and the gripper is elevated and out of view, indicating the object has been released.",
+          "recovery": null
+        },
+        "steps": 507
+      }
+    ],
+    "state": "SUCCESS",
+    "state_history": [
+      {
+        "state": "PLANNING",
+        "elapsed_s": 0.0030396990005101543,
+        "reason": ""
+      },
+      {
+        "state": "LOCATING",
+        "elapsed_s": 61.51853250400018,
+        "reason": ""
+      },
+      {
+        "state": "GRASPING",
+        "elapsed_s": 61.688999054000305,
+        "reason": ""
+      },
+      {
+        "state": "HOLDING",
+        "elapsed_s": 77.84205280600145,
+        "reason": ""
+      },
+      {
+        "state": "PLACING",
+        "elapsed_s": 78.03355555400049,
+        "reason": ""
+      },
+      {
+        "state": "VERIFYING",
+        "elapsed_s": 90.68271465699945,
+        "reason": ""
+      },
+      {
+        "state": "SUCCESS",
+        "elapsed_s": 100.55979172500156,
+        "reason": "The red cube is clearly visible resting inside the yellow bowl, and the gripper is elevated and out of view, indicating the object has been released."
+      }
+    ],
+    "held_object": null,
+    "model": "qwen3.8-flash",
+    "plan": {
+      "status": "ready",
+      "action": "pick_place",
+      "object": {
+        "color": "red",
+        "bbox": [
+          533,
+          406,
+          572,
+          456
+        ]
+      },
+      "destination": {
+        "color": "yellow",
+        "bbox": [
+          445,
+          495,
+          612,
+          675
+        ]
+      },
+      "steps": [
+        "LOCATE_OBJECT",
+        "LOCATE_DESTINATION",
+        "GRASP",
+        "LIFT",
+        "PLACE",
+        "VERIFY"
+      ]
+    },
+    "stop_reason": "The red cube is clearly visible resting inside the yellow bowl, and the gripper is elevated and out of view, indicating the object has been released.",
+    "resources": {
+      "grasp_required_free_mib": 1398,
+      "events": [
+        {
+          "phase": "plan",
+          "status": "complete",
+          "elapsed_s": 60.83386934599912
+        },
+        {
+          "phase": "grasp_inference",
+          "status": "complete",
+          "gpu_before": {
+            "total_mib": 6144,
+            "free_mib": 3239
+          },
+          "pid": 90179,
+          "process_peak_mib": 1142,
+          "returncode": 0,
+          "elapsed_s": 6.011378514998796
+        },
+        {
+          "phase": "execute",
+          "status": "complete",
+          "elapsed_s": 18.312124922002113
+        },
+        {
+          "phase": "verification",
+          "status": "complete",
+          "elapsed_s": 9.423246392001602
+        }
+      ]
+    },
+    "steps": 507,
+    "elapsed_s": 100.84100924400263,
+    "vlm_judgments": {
+      "total": 1,
+      "false_success": 0,
+      "false_failure": 0,
+      "uncertain": 0
+    }
+  },
+  "modules-demo-complete-20261013/task-002/result.json": {
+    "seed": 0,
+    "version": "v3",
+    "instruction": "把绿色方块放进紫色容器",
+    "success": false,
+    "agent_status": "stopped",
+    "max_rounds": 3,
+    "timeout_s": 180.0,
+    "rounds": [
+      {
+        "round": 1,
+        "recovery": "regrasp",
+        "phases": [],
+        "plan_requests": 2
+      }
+    ],
+    "state": "STOPPED",
+    "state_history": [
+      {
+        "state": "PLANNING",
+        "elapsed_s": 0.0033280690004175995,
+        "reason": ""
+      },
+      {
+        "state": "STOPPED",
+        "elapsed_s": 9.077534403000755,
+        "reason": "VLM connection failed or timed out; no further execution"
+      }
+    ],
+    "held_object": null,
+    "model": "qwen3.8-flash",
+    "failure": "VLM connection failed or timed out; no further execution",
+    "resources": {
+      "grasp_required_free_mib": 1398,
+      "events": [
+        {
+          "phase": "plan",
+          "status": "failed",
+          "elapsed_s": 8.390287873000489
+        }
+      ]
+    },
+    "steps": 0,
+    "elapsed_s": 9.078228190002847,
+    "vlm_judgments": {
+      "total": 0,
+      "false_success": 0,
+      "false_failure": 0,
+      "uncertain": 0
+    }
+  },
+  "modules-demo-complete-20261013/session.json": {
+    "seed": 0,
+    "tasks": [
+      {
+        "instruction": "把红色方块放进黄色容器",
+        "output": "task-001",
+        "success": true,
+        "agent_status": "success",
+        "steps": 507,
+        "elapsed_s": 100.84100924400263,
+        "state": "SUCCESS",
+        "held_object": null
+      },
+      {
+        "instruction": "把绿色方块放进紫色容器",
+        "output": "task-002",
+        "success": false,
+        "agent_status": "stopped",
+        "steps": 0,
+        "elapsed_s": 9.078228190002847,
+        "state": "STOPPED",
+        "held_object": null
+      }
+    ],
+    "events": [
+      {
+        "command": "reset",
+        "after_tasks": 0
+      }
+    ],
+    "blocked": true,
+    "state": "STOPPED",
+    "held_object": null,
+    "tasks_since_reset": 2
+  },
+  "modules-demo-complete-20261013/recording.json": {
+    "passed": false,
+    "scripted_commands": true,
+    "injected_fault": "first gripper closure disabled in final task",
+    "vlm_mocked": false
+  }
+}

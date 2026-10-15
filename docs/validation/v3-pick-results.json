@@ -1,0 +1,106 @@
+{
+  "seed": 0,
+  "version": "v3",
+  "instruction": "\u6293\u8d77\u84dd\u8272\u65b9\u5757",
+  "success": true,
+  "agent_status": "success",
+  "max_rounds": 3,
+  "timeout_s": 180.0,
+  "rounds": [
+    {
+      "round": 1,
+      "recovery": "regrasp",
+      "phases": [
+        "raise",
+        "transit",
+        "pregrasp",
+        "approach",
+        "close",
+        "lift",
+        "hold"
+      ],
+      "plan_requests": 1,
+      "plan": {
+        "status": "ready",
+        "action": "pick",
+        "object": {
+          "color": "blue",
+          "bbox": [
+            472,
+            359,
+            497,
+            403
+          ]
+        }
+      },
+      "candidate_index": 0,
+      "tcp_target_world": [
+        [
+          0.5621570944786072,
+          0.38701513409614563,
+          -0.730889081954956,
+          -0.12992683053016663
+        ],
+        [
+          0.5037248134613037,
+          -0.8611401319503784,
+          -0.06854911148548126,
+          -0.16175352036952972
+        ],
+        [
+          -0.6559273600578308,
+          -0.3296315670013428,
+          -0.6790450811386108,
+          0.03421472758054733
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "min_bottom_during_hold_m": 0.1171739473938942,
+      "hold_s": 1.0,
+      "truth": {
+        "success": true,
+        "hold_s": 1.0,
+        "cube_position": [
+          -0.11597432941198349,
+          -0.1516684889793396,
+          0.2322976142168045
+        ]
+      },
+      "verification_requests": 1,
+      "verdict": {
+        "status": "success",
+        "reason": "A blue cube is visibly held between the fingers of the gripper, elevated above the table.",
+        "recovery": null
+      },
+      "steps": 251
+    }
+  ],
+  "model": "qwen3.8-flash",
+  "plan": {
+    "status": "ready",
+    "action": "pick",
+    "object": {
+      "color": "blue",
+      "bbox": [
+        472,
+        359,
+        497,
+        403
+      ]
+    }
+  },
+  "stop_reason": "A blue cube is visibly held between the fingers of the gripper, elevated above the table.",
+  "steps": 251,
+  "elapsed_s": 31.62968279100005,
+  "vlm_judgments": {
+    "total": 1,
+    "false_success": 0,
+    "false_failure": 0,
+    "unknown": 0
+  }
+}

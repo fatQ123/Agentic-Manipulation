@@ -1,0 +1,59 @@
+{
+  "seed": 0,
+  "tasks": [
+    {
+      "instruction": "把红色方块放进黄色容器",
+      "output": "task-001",
+      "success": true,
+      "agent_status": "success",
+      "steps": 507,
+      "elapsed_s": 41.355219615000124,
+      "state": "SUCCESS",
+      "held_object": null
+    },
+    {
+      "instruction": "把绿色方块放进紫色容器",
+      "output": "task-002",
+      "success": true,
+      "agent_status": "success",
+      "steps": 536,
+      "elapsed_s": 52.75329475799981,
+      "state": "SUCCESS",
+      "held_object": null
+    },
+    {
+      "instruction": "把蓝色方块放进黄色容器",
+      "output": "task-003",
+      "success": true,
+      "agent_status": "success",
+      "steps": 534,
+      "elapsed_s": 42.810967921000156,
+      "state": "SUCCESS",
+      "held_object": null
+    },
+    {
+      "instruction": "抓起红色方块",
+      "output": "task-004",
+      "success": false,
+      "agent_status": "stopped",
+      "steps": 245,
+      "elapsed_s": 30.92306511700008,
+      "state": "STOPPED",
+      "held_object": "red"
+    }
+  ],
+  "events": [
+    {
+      "command": "reset",
+      "after_tasks": 0
+    },
+    {
+      "command": "reset",
+      "after_tasks": 3
+    }
+  ],
+  "blocked": true,
+  "state": "STOPPED",
+  "held_object": "red",
+  "tasks_since_reset": 1
+}

@@ -1,0 +1,563 @@
+{
+  "trials": [
+    {
+      "seed": 0,
+      "version": "v3",
+      "instruction": "\u628a\u7ea2\u8272\u65b9\u5757\u653e\u8fdb\u9ec4\u8272\u7897\u91cc",
+      "success": true,
+      "agent_status": "success",
+      "max_rounds": 3,
+      "timeout_s": 180.0,
+      "rounds": [
+        {
+          "round": 1,
+          "recovery": "regrasp",
+          "phases": [
+            "raise",
+            "transit",
+            "pregrasp",
+            "approach"
+          ],
+          "plan_requests": 1,
+          "plan": {
+            "status": "ready",
+            "action": "pick_place",
+            "object": {
+              "color": "red",
+              "bbox": [
+                532,
+                401,
+                566,
+                451
+              ]
+            },
+            "destination": {
+              "color": "yellow",
+              "bbox": [
+                440,
+                497,
+                611,
+                680
+              ]
+            }
+          },
+          "destination_world": [
+            0.08309967815876007,
+            0.13513948023319244,
+            0.08652167022228241
+          ],
+          "candidate_index": 0,
+          "tcp_target_world": [
+            [
+              0.5908046960830688,
+              0.21760383248329163,
+              -0.7769161462783813,
+              -0.12371167540550232
+            ],
+            [
+              -0.026004623621702194,
+              -0.9573062658309937,
+              -0.2879038155078888,
+              -0.007139271590858698
+            ],
+            [
+              -0.8063954710960388,
+              0.19029827415943146,
+              -0.5599222183227539,
+              0.03000595048069954
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "execution_failure": "fingers did not establish a grasp",
+          "truth": {
+            "success": false,
+            "hold_s": 1.0,
+            "cube_position": [
+              -0.12377889454364777,
+              -0.0024583619087934494,
+              0.019999925047159195
+            ]
+          },
+          "verification_requests": 1,
+          "verdict": {
+            "status": "failure",
+            "reason": "The red cube is resting on the table outside the yellow bowl.",
+            "recovery": "regrasp"
+          },
+          "steps": 307
+        },
+        {
+          "round": 2,
+          "recovery": "regrasp",
+          "phases": [
+            "raise",
+            "transit",
+            "pregrasp",
+            "approach",
+            "close",
+            "lift",
+            "hold",
+            "place",
+            "release_retreat",
+            "place_hold"
+          ],
+          "plan_requests": 1,
+          "plan": {
+            "status": "ready",
+            "action": "pick_place",
+            "object": {
+              "color": "red",
+              "bbox": [
+                531,
+                401,
+                568,
+                456
+              ]
+            },
+            "destination": {
+              "color": "yellow",
+              "bbox": [
+                444,
+                496,
+                612,
+                689
+              ]
+            }
+          },
+          "destination_world": [
+            0.08309967815876007,
+            0.13513948023319244,
+            0.08652167022228241
+          ],
+          "candidate_index": 0,
+          "tcp_target_world": [
+            [
+              0.5908046960830688,
+              0.21760383248329163,
+              -0.7769161462783813,
+              -0.12548747658729553
+            ],
+            [
+              -0.026004623621702194,
+              -0.9573062658309937,
+              -0.2879038155078888,
+              -0.005363470409065485
+            ],
+            [
+              -0.8063954710960388,
+              0.19029827415943146,
+              -0.5599222183227539,
+              0.03000595048069954
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "min_bottom_during_hold_m": 0.11749186366796494,
+          "hold_s": 1.0,
+          "place_hold_s": 1.0,
+          "final_cube_position": [
+            0.07087383419275284,
+            0.13632427155971527,
+            0.02999991364777088
+          ],
+          "bowl_position": [
+            0.08272412419319153,
+            0.13622790575027466,
+            0.004999998956918716
+          ],
+          "truth": {
+            "success": true,
+            "hold_s": 1.0,
+            "cube_position": [
+              0.07087383419275284,
+              0.13632427155971527,
+              0.02999991364777088
+            ]
+          },
+          "verification_requests": 1,
+          "verdict": {
+            "status": "success",
+            "reason": "A red cube is clearly visible resting inside the yellow bowl, which is the correct destination object.",
+            "recovery": null
+          },
+          "steps": 815
+        }
+      ],
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "red",
+          "bbox": [
+            532,
+            401,
+            566,
+            451
+          ]
+        },
+        "destination": {
+          "color": "yellow",
+          "bbox": [
+            440,
+            497,
+            611,
+            680
+          ]
+        }
+      },
+      "stop_reason": "A red cube is clearly visible resting inside the yellow bowl, which is the correct destination object.",
+      "steps": 815,
+      "elapsed_s": 57.96769849799966,
+      "vlm_judgments": {
+        "total": 2,
+        "false_success": 0,
+        "false_failure": 0,
+        "unknown": 0
+      },
+      "injected_fault": [
+        "missed_grasp"
+      ],
+      "recovery_check_passed": true
+    },
+    {
+      "seed": 0,
+      "version": "v3",
+      "instruction": "\u628a\u7ea2\u8272\u65b9\u5757\u653e\u8fdb\u9ec4\u8272\u7897\u91cc",
+      "success": true,
+      "agent_status": "success",
+      "max_rounds": 3,
+      "timeout_s": 180.0,
+      "rounds": [
+        {
+          "round": 1,
+          "recovery": "regrasp",
+          "phases": [
+            "raise",
+            "transit",
+            "pregrasp",
+            "approach",
+            "close",
+            "lift",
+            "hold",
+            "place",
+            "release_retreat"
+          ],
+          "plan_requests": 1,
+          "plan": {
+            "status": "ready",
+            "action": "pick_place",
+            "object": {
+              "color": "red",
+              "bbox": [
+                536,
+                409,
+                572,
+                459
+              ]
+            },
+            "destination": {
+              "color": "yellow",
+              "bbox": [
+                444,
+                501,
+                615,
+                668
+              ]
+            }
+          },
+          "destination_world": [
+            0.08309967815876007,
+            0.13513948023319244,
+            0.08652167022228241
+          ],
+          "candidate_index": 0,
+          "tcp_target_world": [
+            [
+              0.5908046960830688,
+              0.21760383248329163,
+              -0.7769161462783813,
+              -0.12371167540550232
+            ],
+            [
+              -0.026004623621702194,
+              -0.9573062658309937,
+              -0.2879038155078888,
+              -0.007139271590858698
+            ],
+            [
+              -0.8063954710960388,
+              0.19029827415943146,
+              -0.5599222183227539,
+              0.03000595048069954
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "min_bottom_during_hold_m": 0.11761568486690521,
+          "hold_s": 1.0,
+          "execution_failure": "place/settle criterion failed",
+          "truth": {
+            "success": false,
+            "hold_s": 1.0,
+            "cube_position": [
+              0.08523047715425491,
+              0.132513627409935,
+              0.24242675304412842
+            ]
+          },
+          "verification_requests": 1,
+          "verdict": {
+            "status": "failure",
+            "reason": "The red cube is being held by the gripper and is positioned above the table, not inside the yellow bowl.",
+            "recovery": "replace"
+          },
+          "steps": 401
+        },
+        {
+          "round": 2,
+          "recovery": "replace",
+          "phases": [
+            "place",
+            "release_retreat",
+            "place_hold"
+          ],
+          "plan_requests": 1,
+          "plan": {
+            "status": "ready",
+            "action": "pick_place",
+            "object": {
+              "color": "red",
+              "bbox": [
+                503,
+                410,
+                555,
+                477
+              ]
+            },
+            "destination": {
+              "color": "yellow",
+              "bbox": [
+                447,
+                508,
+                612,
+                676
+              ]
+            }
+          },
+          "destination_world": [
+            0.08309967815876007,
+            0.13513948023319244,
+            0.08652167022228241
+          ],
+          "place_hold_s": 1.0,
+          "final_cube_position": [
+            0.06232696771621704,
+            0.13711947202682495,
+            0.029999911785125732
+          ],
+          "bowl_position": [
+            0.08272412419319153,
+            0.13622790575027466,
+            0.004999998956918716
+          ],
+          "truth": {
+            "success": true,
+            "hold_s": 1.0,
+            "cube_position": [
+              0.06232696771621704,
+              0.13711947202682495,
+              0.029999911785125732
+            ]
+          },
+          "verification_requests": 1,
+          "verdict": {
+            "status": "success",
+            "reason": "The red cube is visible resting inside the yellow bowl and is not held by the gripper.",
+            "recovery": null
+          },
+          "steps": 620
+        }
+      ],
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "red",
+          "bbox": [
+            536,
+            409,
+            572,
+            459
+          ]
+        },
+        "destination": {
+          "color": "yellow",
+          "bbox": [
+            444,
+            501,
+            615,
+            668
+          ]
+        }
+      },
+      "stop_reason": "The red cube is visible resting inside the yellow bowl and is not held by the gripper.",
+      "steps": 620,
+      "elapsed_s": 66.67344944599972,
+      "vlm_judgments": {
+        "total": 2,
+        "false_success": 0,
+        "false_failure": 0,
+        "unknown": 0
+      },
+      "injected_fault": [
+        "failed_release"
+      ],
+      "recovery_check_passed": true
+    },
+    {
+      "seed": 0,
+      "version": "v3",
+      "instruction": "\u628a\u7ea2\u8272\u65b9\u5757\u653e\u8fdb\u9ec4\u8272\u7897\u91cc",
+      "success": false,
+      "agent_status": "failure",
+      "max_rounds": 3,
+      "timeout_s": 180.0,
+      "rounds": [
+        {
+          "round": 1,
+          "recovery": "regrasp",
+          "phases": [
+            "raise",
+            "transit",
+            "pregrasp",
+            "approach"
+          ],
+          "plan_requests": 1,
+          "plan": {
+            "status": "ready",
+            "action": "pick_place",
+            "object": {
+              "color": "red",
+              "bbox": [
+                530,
+                403,
+                568,
+                455
+              ]
+            },
+            "destination": {
+              "color": "yellow",
+              "bbox": [
+                436,
+                496,
+                610,
+                688
+              ]
+            }
+          },
+          "destination_world": [
+            0.08309967815876007,
+            0.13513948023319244,
+            0.08652167022228241
+          ],
+          "candidate_index": 0,
+          "tcp_target_world": [
+            [
+              0.5908046960830688,
+              0.21760383248329163,
+              -0.7769161462783813,
+              -0.12371167540550232
+            ],
+            [
+              -0.026004623621702194,
+              -0.9573062658309937,
+              -0.2879038155078888,
+              -0.007139271590858698
+            ],
+            [
+              -0.8063954710960388,
+              0.19029827415943146,
+              -0.5599222183227539,
+              0.03000595048069954
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "execution_failure": "fingers did not establish a grasp",
+          "truth": {
+            "success": false,
+            "hold_s": 1.0,
+            "cube_position": [
+              1.500068187713623,
+              1.500140905380249,
+              -0.8996431827545166
+            ]
+          },
+          "verification_requests": 1,
+          "verdict": {
+            "status": "failure",
+            "reason": "The red cube is not visible in the image, but the yellow bowl is empty, indicating the cube is not inside the destination bowl.",
+            "recovery": "stop"
+          },
+          "steps": 307
+        }
+      ],
+      "model": "qwen3.8-flash",
+      "plan": {
+        "status": "ready",
+        "action": "pick_place",
+        "object": {
+          "color": "red",
+          "bbox": [
+            530,
+            403,
+            568,
+            455
+          ]
+        },
+        "destination": {
+          "color": "yellow",
+          "bbox": [
+            436,
+            496,
+            610,
+            688
+          ]
+        }
+      },
+      "stop_reason": "The red cube is not visible in the image, but the yellow bowl is empty, indicating the cube is not inside the destination bowl.",
+      "steps": 307,
+      "elapsed_s": 29.954833511999823,
+      "vlm_judgments": {
+        "total": 1,
+        "false_success": 0,
+        "false_failure": 0,
+        "unknown": 0
+      },
+      "injected_fault": [
+        "lost_target"
+      ],
+      "recovery_check_passed": true
+    }
+  ],
+  "passed": true
+}

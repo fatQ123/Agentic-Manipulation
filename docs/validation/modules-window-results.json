@@ -1,0 +1,22 @@
+{
+  "debug": {
+    "returncode": 0,
+    "passed": true,
+    "waiting_visible": true,
+    "recovery_visible": true,
+    "close_detected": true
+  },
+  "execution": {
+    "returncode": 0,
+    "passed": true,
+    "waiting_visible": true,
+    "recovery_visible": true,
+    "close_detected": true
+  },
+  "eof": {
+    "passed": true
+  },
+  "interrupt": {
+    "passed": true
+  }
+}

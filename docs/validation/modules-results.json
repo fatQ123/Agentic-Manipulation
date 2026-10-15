@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-13",
+  "scope": "Five modules and continuous V3 demo, existing single-GPU deployment",
+  "offline_tests": {
+    "passed": 12,
+    "total": 12
+  },
+  "v3": {
+    "passed": true,
+    "successes": 10,
+    "total": 10,
+    "report": "modules-v3-results.json",
+    "note": "Single complete batch; later recovery prompt, pick-only observation and UI fixes checked on their affected paths only."
+  },
+  "v1_v2_smoke": {
+    "passed": true,
+    "report": "modules-smoke-results.json"
+  },
+  "continuous_three_transfers": {
+    "passed": true,
+    "report": "modules-continuous-results.json",
+    "note": "First three tasks passed; later pick-only failure is retained."
+  },
+  "held_continuation": {
+    "passed": true,
+    "report": "modules-held-results.json"
+  },
+  "recovery": {
+    "passed": true,
+    "initial_report": "modules-recovery-initial.json",
+    "recheck_report": "modules-recovery-recheck.json",
+    "reviewed_report": "modules-recovery-reviewed.json",
+    "note": "Lost target passed initially; missed grasp and failed release passed targeted rechecks. Reviewed saved results allow a reobserve round; original flags preserved."
+  },
+  "resources": {
+    "passed": true,
+    "report": "modules-resource-results.json",
+    "required_free_mib": 1398
+  },
+  "window_lifecycle": {
+    "passed": true,
+    "report": "modules-window-results.json",
+    "note": "Window lifecycle checks preceded native panel hiding; subsequent actual execution displayed the unobscured scene and cleaned up."
+  },
+  "formal_recording": {
+    "status": "deferred_by_user",
+    "completed": false,
+    "failed_attempt": "modules-session-details.json: modules-demo-complete-20261013/recording.json",
+    "reason": "User requested no further recording and prioritized the working demo."
+  },
+  "published": false,
+  "session_details": "modules-session-details.json",
+  "raw_outputs": "Deleted during user-requested release cleanup on 2026-10-13. Selected JSON reports and historical release videos retained in docs/validation."
+}
